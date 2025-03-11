@@ -37,12 +37,12 @@ const PricingCard = ({ type, title, price, discount, features }) => {
                     value={duration}
                     onChange={handleDurationChange}
                 >
-                    <IoIosArrowDown className="arrow" />
+
                     <option value="6" >6 месяцев</option>
                     <option value="12">12 месяцев</option>
                     <option value="24">24 месяца</option>
                 </select>
-
+                <IoIosArrowDown className="arrow" />
             </div>
 
             <div className="button">
