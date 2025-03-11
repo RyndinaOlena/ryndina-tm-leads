@@ -1,9 +1,24 @@
+import { useState } from 'react';
 import pricingData from '../../pages/sections/utils.js'
 import "../../styles/sections/_promotional.scss";
 import { FaCheck } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 
 const PricingCard = ({ type, title, price, discount, features }) => {
+
+    const [duration, setDuration] = useState('12');
+    const handleDurationChange = (e) => {
+        setDuration(e.target.value);
+    };
+    const calculatePrice = (basePrice) => {
+        if (duration === '6') {
+            return basePrice * 0.95;
+        } else if (duration === '12') {
+            return basePrice * 0.9;
+        } else {
+            return basePrice;
+        }
+    };
     return (
         <div className={`pricing-card ${type}`}>
             <h2 className="card-title">{title}</h2>
@@ -14,12 +29,19 @@ const PricingCard = ({ type, title, price, discount, features }) => {
             </ul>
             <div className="price-section">
                 <div>
-                    <span className="price">${price}</span>
+                    <span className="price">${calculatePrice(price).toFixed(2)}</span>
                     <span className="discount">-{discount}%</span>
                 </div>
-                <div>
-                    <button className="duration">12 месяцев <IoIosArrowDown className="arrow" /></button>
-                </div>
+                <select
+                    className="duration"
+                    value={duration}
+                    onChange={handleDurationChange}
+                >
+                    <IoIosArrowDown className="arrow" />
+                    <option value="6" >6 месяцев</option>
+                    <option value="12">12 месяцев</option>
+                    <option value="24">24 месяца</option>
+                </select>
 
             </div>
 

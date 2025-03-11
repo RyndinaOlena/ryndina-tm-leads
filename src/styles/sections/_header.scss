@@ -8,6 +8,7 @@
     padding-right: 12px;
     justify-content: space-between;
     margin-bottom: -10px;
+    max-width: 1440px;
 
     @media (min-width:760px) {
         padding-left: 40px;
@@ -18,7 +19,6 @@
     }
 
     @media (min-width:1400px) {
-        padding-left: 40px;
         gap: 110px;
     }
 
@@ -111,7 +111,6 @@
             border-radius: 1.5px;
             color: #57E1FF;
             font-size: 14px;
-            padding: 0;
             padding: 11px 24px;
             margin-right: 12px;
 
@@ -186,9 +185,9 @@
         right: 0;
         width: 100%;
         height: 100%;
-        display: flex;
         flex-direction: column;
         z-index: 5;
+
     }
 
     .modal {
@@ -197,13 +196,12 @@
         overflow: auto;
         box-sizing: border-box;
         position: relative;
-        height: 100%;
         margin-top: 54px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-
+        overflow-y: auto;
 
         .link_modal_lists {
             display: flex;
@@ -212,7 +210,7 @@
             text-decoration: none;
             flex-direction: column;
             align-items: flex-start;
-            transform: uppercase;
+            text-transform: uppercase;
             gap: 32px;
 
             .link_modal {

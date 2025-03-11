@@ -2,21 +2,20 @@
 @import '../variables';
 
 .hero_block {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+
+
     @media (min-width: 760px) {
         display: flex;
         flex-direction: row-reverse;
-        padding-top: 185px;
-        padding-left: 80px;
+        padding: 160px 0 160x 80px;
     }
 
     @media (min-width: 850px) {
         padding-left: 40px;
         gap: 20px;
-    }
-
-    @media (min-width: 1100px) {
-        padding-left: 40px;
-        gap: 128px;
     }
 
     & .shorts {

@@ -1,77 +1,79 @@
 .footer {
     background-color: #0A0A0E;
-    padding: 20px;
 
-    .footer_container {
-        align-items: end;
-        text-align: center;
-
+    .footer_block {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1440px;
     }
 
-    .footer_nav {
-        display: flex;
+
+
+    @media (max-width:760px) {
         flex-direction: column;
+        gap: 80px;
+        padding-top: 40px;
+    }
+
+    .footer_container {
+        display: flex;
         align-items: flex-end;
-        gap: 12px;
+        max-width: 1440px;
 
-        &_link {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s;
+        @media (max-width:760px) {
+            flex-direction: column;
+        }
 
-            &:hover {
-                color: #5ED5FC;
+        .footer_nav {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width:760px) {
+                flex-direction: column;
+            }
+
+            &_link {
+                display: flex;
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                transition: color 0.3s;
+                margin-right: 24px;
+                font-family: "IBM Plex Sans", sans-serif;
+
+                @media (max-width:760px) {
+                    margin-bottom: 16px;
+
+
+                }
+
+                &:hover {
+                    color: #5ED5FC;
+                }
+            }
+
+            &_link:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
             }
         }
     }
 
     .footer_logo {
         display: flex;
-        justify-content: flex-start;
-        margin-top: 20px;
+        flex-direction: column;
+        gap: 102px;
 
-        &_link {
-            display: block;
-        }
+        .footer_bottom {
 
-        &_img {
-            max-width: 120px;
-            height: auto;
-        }
-    }
-
-    .footer_bottom {
-        text-align: center;
-        margin-top: 20px;
-
-        &_text {
-            color: #FFFFFF;
-            font-size: 12px;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .footer_container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            flex-direction: column-reverse;
-
-        }
-
-        .footer_nav {
-            flex-direction: row;
-            align-items: end;
-            order: -1;
-        }
-
-        .footer_logo {
-            justify-content: end;
-            margin-top: 20px;
+            .footer_bottom_text {
+                font-family: "IBM Plex Sans", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.6);
+            }
         }
     }
 }

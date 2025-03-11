@@ -1,0 +1,24 @@
+.deals {
+    padding: 96px 16px;
+
+    &_title {
+        font-size: 44px;
+        color: #fff;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-transform: uppercase;
+
+    }
+
+    &_text {
+        color: rgba(53, 255, 158, 1);
+        padding: 4px;
+        font-family: "IBM Plex Sans", sans-serif;
+
+        &_circle {
+            margin-top: 4px;
+            background-color: #fff;
+        }
+    }
+
+
+}

@@ -5,11 +5,11 @@
     display: flex;
     margin-top: -2px;
     flex-wrap: wrap;
-    padding: 16px;
-    padding-top: 26px;
+    padding: 61px 16px;
     gap: 32px;
     align-items: center;
     justify-content: space-between;
+    max-width: 1440px;
 
 
     @media (min-width:650px) {
