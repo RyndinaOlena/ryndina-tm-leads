@@ -1,0 +1,10 @@
+@import '../styles/variables';
+
+.dark_container {
+    background-color: $dark-bg-color;
+}
+
+.light_container {
+    width: 100%;
+    background-color: white;
+}
