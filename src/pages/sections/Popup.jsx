@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../../styles/_header.scss'
 import { IoCloseSharp } from "react-icons/io5";
 import ActionButtons from './ActionButtons';
-const Modal = (props) => {
+const Popup = (props) => {
     const { closeModal } = props;
     return (
         <div className='overlay'>
@@ -24,4 +24,4 @@ const Modal = (props) => {
     )
 }
 
-export default Modal
+export default Popup;

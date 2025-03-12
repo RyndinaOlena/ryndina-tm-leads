@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../styles/_header.scss';
 import logo from '../../img/logo.svg'
 import button from '../../img/btn.svg'
-import Modal from './modal';
+import Popup from './Popup';
 import ActionButtons from './ActionButtons';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +54,7 @@ const Header = () => {
 
                 <div className='nav_menu'>
                     <button className="btn" onClick={handleOpen}><img src={button} alt="btn"></img></button>
-                    {isOpen && <Modal closeModal={closeModal} />}
+                    {isOpen && <Popup closeModal={closeModal} />}
                 </div>
             </div>
         </header>
