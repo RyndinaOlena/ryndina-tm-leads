@@ -16,6 +16,10 @@
     max-width: 1440px;
     padding: 0 16px 20px 16px;
 
+    @media (max-width: 350px) {
+        padding: 5px;
+    }
+
 
     .pricing-card {
         max-width: 420px;
@@ -31,8 +35,8 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        @media (max-width:300px) {
-            padding: 12px 10px;
+        @media (max-width:350px) {
+            padding: 5px 6px;
 
         }
 
@@ -41,6 +45,9 @@
             cursor: pointer;
             transform: scale(1.05);
 
+            @media (max-width:350px) {
+                transform: scale(1.0);
+            }
         }
 
         &.standard {
@@ -61,6 +68,11 @@
             font-weight: $font-weight-medium;
             text-transform: uppercase;
             margin-bottom: 24px;
+
+            @media (max-width:350px) {
+                padding: 5px 6px;
+                font-size: large;
+            }
 
 
         }
@@ -93,6 +105,10 @@
                 font-weight: $font-weight-medium;
                 font-family: $font-family-ibm-plex-sans;
                 flex-grow: 1;
+
+                @media (max-width:350px) {
+                    font-size: large;
+                }
             }
 
             .discount {
