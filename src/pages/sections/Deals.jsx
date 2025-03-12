@@ -1,7 +1,7 @@
 import React from 'react'
 import CardList from './Card'
 import Promotional from './PracticalCard'
-import '../../styles/sections/_deals.scss';
+import '../../styles/_deals.scss';
 import { MdCircle } from "react-icons/md";
 const Deals = () => {
     return (

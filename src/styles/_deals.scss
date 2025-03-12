@@ -1,4 +1,4 @@
-@import '../variables';
+@use './_variables' as *;
 
 .deals {
     padding: 96px 16px;

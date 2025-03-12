@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/sections/_performance.scss';
+import '../../styles/_performance.scss';
 const Performance = () => {
     return (
         <div className='performance_section' id="performance">

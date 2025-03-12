@@ -1,6 +1,6 @@
 import React from 'react'
 import short_img from '../../img/short.svg'
-import '../../styles/sections/_hero.scss';
+import '../../styles/_hero.scss';
 import bg_bottom from '../../img/bg_bottom.png'
 const Hero = () => {
     return (

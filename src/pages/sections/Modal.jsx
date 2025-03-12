@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../../styles/sections/_header.scss'
+import '../../styles/_header.scss'
 import { IoCloseSharp } from "react-icons/io5";
 import ActionButtons from './ActionButtons';
 const Modal = (props) => {

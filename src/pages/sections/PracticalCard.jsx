@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import pricingData from '../../pages/sections/utils.js'
-import "../../styles/sections/_promotional.scss";
+import "../../styles/_promotional.scss";
 import { FaCheck } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 

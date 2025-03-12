@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/sections/_header.scss";
+import "../../styles/_header.scss";
 
 const ActionButtons = () => {
     return (

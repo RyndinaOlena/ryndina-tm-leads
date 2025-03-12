@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/sections/_card.scss";
+import "../../styles/_card.scss";
 
 const cardsData = [
     {

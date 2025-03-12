@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles/sections/_header.scss';
+import '../../styles/_header.scss';
 import logo from '../../img/logo.svg'
 import button from '../../img/btn.svg'
 import Modal from './modal';
