@@ -57,6 +57,7 @@
     font-weight: 600;
     display: flex;
     justify-content: space-between;
+    font-family: $font-family-ibm-plex-sans;
     align-items: center;
     transition: background-color 0.3s ease-in-out;
 
@@ -75,6 +76,7 @@
     overflow: hidden;
     max-height: 0;
     opacity: 0;
+    font-family: $font-family-ibm-plex-sans;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
 
     &.show {
