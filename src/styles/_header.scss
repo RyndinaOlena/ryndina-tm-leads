@@ -186,7 +186,7 @@
         height: 100%;
         flex-direction: column;
         z-index: 5;
-
+        overflow-y: auto;
     }
 
     .modal {
@@ -200,7 +200,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-        overflow-y: auto;
+
 
         .link_modal_lists {
             display: flex;
