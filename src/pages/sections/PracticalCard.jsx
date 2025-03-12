@@ -37,12 +37,10 @@ const PricingCard = ({ type, title, price, discount, features }) => {
                     value={duration}
                     onChange={handleDurationChange}
                 >
-
-                    <option value="6" >6 месяцев</option>
+                    <option value="6">6 месяцев</option>
                     <option value="12">12 месяцев</option>
                     <option value="24">24 месяца</option>
                 </select>
-                <IoIosArrowDown className="arrow" />
             </div>
 
             <div className="button">
@@ -56,10 +54,12 @@ const PricingCard = ({ type, title, price, discount, features }) => {
 
 const Promotional = () => {
     return (
-        <div className="pricing-container" id="pricing">
-            {pricingData.map((data, index) => (
-                <PricingCard key={index} {...data} />
-            ))}
+        <div className='content'>
+            <div className="pricing-container " id="pricing">
+                {pricingData.map((data, index) => (
+                    <PricingCard key={index} {...data} />
+                ))}
+            </div>
         </div>
     );
 };

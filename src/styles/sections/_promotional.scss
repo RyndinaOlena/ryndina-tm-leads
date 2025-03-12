@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import '../variables';
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pricing-container {
     display: flex;
     align-items: center;
@@ -37,20 +46,20 @@
 
         &.standard {
             background-color: transparent;
-            color: white;
+            color: $text-color-primary;
         }
 
         &.vip {
             background-color: transparent;
-            color: white;
+            color: $text-color-primary;
 
         }
 
         .card-title {
-            font-size: 20px;
-            color: white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 500;
+            font-size: $font-size-title;
+            color: $text-color-primary;
+            font-family: $font-family-ibm-plex-sans;
+            font-weight: $font-weight-medium;
             text-transform: uppercase;
             margin-bottom: 24px;
 
@@ -60,11 +69,11 @@
         .features {
             flex: 1;
             padding: 12px 0;
-            font-size: 14px;
+            font-size: $font-size-medium;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            font-family: "IBM Plex Sans", sans-serif;
+            font-family: $font-family-ibm-plex-sans;
 
             .feature {
                 display: flex;
@@ -81,14 +90,14 @@
             margin-bottom: 26px;
 
             .price {
-                font-size: 35px;
-                font-weight: 500;
-                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: $font-size-title;
+                font-weight: $font-weight-medium;
+                font-family: $font-family-ibm-plex-sans;
                 flex-grow: 1;
             }
 
             .discount {
-                font-size: 18px;
+                font-size: $font-size-large;
                 color: #32cd32;
                 vertical-align: top
             }
@@ -97,46 +106,47 @@
                 background: rgba(255, 255, 255, 0.2);
                 padding: 6px 12px;
                 border-radius: 4px;
-                font-size: 16px;
-                font-weight: 400;
-                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: $font-size-medium;
+                font-weight: $font-weight-regular;
+                font-family: $font-family-ibm-plex-sans;
                 cursor: pointer;
                 border: none;
-                color: white;
+                color: $text-color-primary;
                 display: flex;
                 align-items: center;
                 gap: 4px;
 
-
                 .arrow {
                     margin-top: 5px
                 }
+
+
             }
         }
 
         .button {
-            background: #5ED5FC;
+            background: $button-background;
             color: black;
             text-align: center;
             padding: 12px 0;
             border-radius: 4px;
             width: 100%;
-            font-weight: bold;
+            font-weight: $font-weight-bold;
             cursor: pointer;
             transition: 0.3s;
-            font-family: "IBM Plex Sans", sans-serif;
+            font-family: $font-family-ibm-plex-sans;
 
             @media (max-width:300px) {}
 
             &:hover {
-                background: #42C2E8;
+                background: $button-hover-background;
             }
 
             .sub-text {
-                font-size: 12px;
+                font-size: $font-size-small;
                 opacity: 0.8;
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-weight: 400;
+                font-family: $font-family-ibm-plex-sans;
+                font-weight: $font-weight-regular;
                 color: rgba(3, 7, 24, 0.7);
             }
         }

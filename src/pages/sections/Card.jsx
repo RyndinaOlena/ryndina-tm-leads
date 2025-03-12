@@ -56,8 +56,7 @@ const Card = ({ title, subtitle, profit, profitValue, goal, date }) => {
                 <p className="card-profit-value">{profitValue}</p>
 
             </div>
-            <p className="card-goal">{goal}</p>
-            <p className="card-date">{date}</p>
+            <p className="card-date"><span className="card-goal">{goal}</span>{date}</p>
             <p className="card-corner"></p>
         </div>
     );
@@ -65,13 +64,15 @@ const Card = ({ title, subtitle, profit, profitValue, goal, date }) => {
 
 const CardList = () => {
     return (
-        <div className="card-list" id="card">
+
+        <div className="card-list " id="card">
             <div className="card-container">
                 {cardsData.map((card, index) => (
                     <Card key={index} {...card} />
                 ))}
             </div>
         </div>
+
     );
 };
 

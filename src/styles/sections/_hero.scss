@@ -2,10 +2,9 @@
 @import '../variables';
 
 .hero_block {
-    max-width: 1440px;
     display: flex;
     justify-content: center;
-
+    display: block;
 
     @media (min-width: 760px) {
         display: flex;
@@ -55,16 +54,16 @@
             padding: 0 16px;
 
             & .hero_title {
-                font-size: 35px;
-                color: white;
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-weight: 700;
+                font-size: $font-size-title;
+                color: $text-color-primary;
+                font-family: $font-family-ibm-plex-sans;
+                font-weight: $font-weight-bold;
                 text-transform: uppercase;
                 line-height: 44px;
                 letter-spacing: -4%;
 
                 @media (max-width: 300px) {
-                    font-size: 20px;
+                    font-size: $font-size-small;
                     line-height: 24px;
                 }
 
@@ -75,10 +74,10 @@
 
             & .hero_text {
                 margin-top: 12px;
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 16px;
-                font-weight: 400;
-                color: white;
+                font-family: $font-family-ibm-plex-sans;
+                font-size: $font-size-medium;
+                font-weight: $font-weight-regular;
+                color: $text-color-primary;
                 opacity: 0.7;
             }
         }
@@ -87,7 +86,7 @@
             position: relative;
             width: auto;
             height: 50px;
-            background: rgba(32, 26, 79, 1);
+            background: $input-background;
             display: flex;
             align-items: center;
             margin: 24px 16px 0 16px;
@@ -101,52 +100,52 @@
                 flex: 1;
                 height: 100%;
                 background: transparent;
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-weight: 500;
+                font-family: $font-family-ibm-plex-sans;
+                font-weight: $font-weight-medium;
                 border: none;
                 border-radius: 3px;
-                color: #A9A3C1;
-                font-size: 16px;
+                color: $input-text-color;
+                font-size: $font-size-medium;
                 padding: 0 10px;
                 outline: none;
 
                 &::placeholder {
-                    color: #A9A3C1;
+                    color: $input-text-color;
                 }
 
                 @media (max-width: 320px) {
-                    font-size: 12px;
+                    font-size: $font-size-small;
                     padding: 0 6px;
                 }
             }
 
             & button {
-                background: #5ED5FC;
-                font-family: 'IBM Plex Sans', sans-serif;
+                background: $button-background;
+                font-family: $font-family-ibm-plex-sans;
                 border: none;
                 padding: 10px 15px;
                 border-radius: 3px;
-                font-size: 16px;
-                font-weight: 500;
+                font-size: $font-size-medium;
+                font-weight: $font-weight-medium;
                 cursor: pointer;
                 transition: 0.3s;
                 margin: 4px;
 
                 &:hover {
-                    background: #42C2E8;
+                    background: $button-hover-background;
                 }
 
                 @media (max-width: 320px) {
-                    font-size: 12px;
+                    font-size: $font-size-small;
                     padding: 8px 12px;
                 }
             }
         }
 
         & .input_text {
-            font-size: 14px;
-            font-weight: 400;
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: $font-size-small;
+            font-weight: $font-weight-regular;
+            font-family: $font-family-ibm-plex-sans;
             color: white;
             opacity: 0.3;
             margin-top: 12px;

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import '../variables';
+
 .questions_section {
     display: flex;
     align-items: center;
@@ -6,18 +9,17 @@
     max-width: 1440px;
 
     .questions_section_title {
-        font-size: 28px;
+        font-size: $font-size-title;
         line-height: 36px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 700;
+        font-family: $font-family-ibm-plex-sans;
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
         margin-top: 56px;
-
     }
 
     .questions_section_information {
         background-color: rgba(106, 84, 255, 1);
-        color: white;
+        color: $text-color-primary;
         padding: 16px;
         margin-top: 40px;
         border-radius: 4px;
@@ -35,22 +37,19 @@
         }
 
         .questions_section_information_title {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
+            font-family: $font-family-ibm-plex-sans;
+            font-size: $font-size-large;
+            font-weight: $font-weight-medium;
             line-height: 28px;
             margin-bottom: 12px;
         }
 
         .questions_section_information_text {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
+            font-family: $font-family-ibm-plex-sans;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-regular;
             line-height: 20px;
-
         }
-
-
     }
 
     .questions_list_block {
@@ -61,17 +60,13 @@
         max-width: 846px;
         width: 100%;
 
-
-
         .questions_list_block_alert {
             background-color: rgba(234, 239, 240, 1);
             padding: 16px;
             max-width: 846px;
             border: none;
             width: 100%;
-            max-width: 846px;
             cursor: pointer;
         }
-
     }
 }

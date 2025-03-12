@@ -11,7 +11,10 @@ const Footer = () => {
                     <nav className="footer_nav">
                         <a href="#performance" className="footer_nav_link">ЦИФРЫ</a>
                         <a href="#card" className="footer_nav_link">СДЕЛКИ ОНЛАЙН</a>
+                        <a href="#pricing" className="footer_nav_link">О КОМПАНИИ</a>
+                        <a href="#pricing" className="footer_nav_link">TRADEBLAD ЭТО</a>
                         <a href="#pricing" className="footer_nav_link">ТАРИФЫ</a>
+                        <a href="#pricing" className="footer_nav_link">FAQ</a>
                     </nav>
 
                 </div>
@@ -24,7 +27,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+
         </footer>
+
     );
 };
 

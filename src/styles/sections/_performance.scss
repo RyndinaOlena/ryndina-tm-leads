@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import '../variables';
 
 .performance_section {
     background-color: white;
     display: flex;
-    margin-top: -2px;
+    margin-top: -5px;
     flex-wrap: wrap;
-    padding: 61px 16px;
+    padding: 60px 16px;
     gap: 32px;
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
+    margin: 0 auto;
 
 
     @media (min-width:650px) {
@@ -17,20 +19,20 @@
     }
 
     .performance_section_title {
-        font-size: 28px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 700;
+        font-size: $font-size-large;
+        font-family: $font-family-ibm-plex-sans;
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
         line-height: 36px;
 
         @media (min-width:760px) {
-            font-size: 44px;
+            font-size: $font-size-title;
         }
     }
 
     .performance_section_date {
-        font-size: 14px;
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: $font-size-small;
+        font-family: $font-family-ibm-plex-sans;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
         margin-top: 5px;
@@ -39,14 +41,14 @@
     .performance_section_text {
         font-size: 14px;
         line-height: 20px;
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: $font-family-ibm-plex-sans;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
     }
 
     .performance_section_amount {
         font-size: 35px;
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: $font-family-ibm-plex-sans;
         letter-spacing: -2%;
         text-transform: uppercase;
         color: rgba(106, 84, 255, 1);
